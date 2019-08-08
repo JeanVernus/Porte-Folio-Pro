@@ -1,0 +1,21 @@
+{
+  "name": "freedevedition",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "googleapis": "^42.0.0",
+    "react": "^16.8.6",
+    "react-burger-menu": "^2.6.10",
+    "react-dom": "^16.8.6",
+    "react-image-gallery": "^0.8.18",
+    "react-reveal": "^1.2.2",
+    "react-scripts": "0.9.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

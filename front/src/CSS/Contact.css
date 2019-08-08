@@ -1,0 +1,14 @@
+.segment {
+  text-align: center;
+}
+.paddingForm{
+  padding: 5em
+}
+
+.displayBannDevisContact {
+  display: flex;
+  justify-content: center ;
+  background-color: #231F20;
+  border: 2px solid rgb(99, 19, 85);
+  padding: 2em
+}

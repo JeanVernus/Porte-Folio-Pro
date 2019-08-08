@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=VT323|Ubuntu&display=swap');
+
+.titleHome1 {
+  background-image: url('../asset/cultngeek-logoHD.jpg');
+  background-size: cover;
+  max-width: 1300px;
+  height: 500px;
+  text-align: center;
+  font-family: 'VT323', sans-serif;
+  font-size: 150px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #F2711C;
+  border: 4px inset #F2711C;
+  margin-bottom: 5em;
+  padding-top: 1em;
+  box-shadow: black 4px 10px 16px 4px;
+}
+
+.titleHome2 {
+  font-size: 30px;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+  color: #F2711C
+}
+
+.marginTitle {
+  margin-bottom: 7em;
+  margin-top: 5em
+}
+
+.prez1 {
+  text-align: center;
+  font-size: 20px;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.prez2 {
+  text-align: center;
+  font-size: 25px;
+  margin-left: 3em;
+  margin-right: 3em;
+  font-weight: bolder
+}
+
+.displayPrez {
+  margin-top: 10em;
+  padding: 5em
+}
+
+.boldPrez {
+  font-weight: bolder
+}
+
+.displaySabre {
+  margin-left: 10%;
+  min-width: 80%;
+  max-height: 250px
+}
+
+.subTitlePrez {
+  font-family: 'VT323', sans-serif;
+  font-size: 50px;
+  margin-left: 1em;
+  text-shadow: #F2711C 2px 5px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center
+}
+
+.backWallPrezTeam {
+  background-image: url('../asset/backWall.jpg');
+  margin-left: 2em;
+  margin-right: 2em;
+  border-radius: 2em;
+  margin-bottom: 5em
+}
+
+.prezTeam {
+  padding: 3em;
+  margin-left: 15%;
+}
+
+.prezPerso1 {
+  background-color: black;
+  background-image: url('../asset/logoCNG2.png');
+  background-size: cover;
+  display: flex;
+  border: 2px inset black;
+  padding: 2em;
+  max-height: 300px;
+  max-width: 1000px;
+  border-radius: 5em;
+  box-shadow: #F2711C 2px 5px 8px 2px;
+}
+
+.prezPerso2 {
+  background-color: black;
+  background-image: url('../asset/logoCNG3.png');
+  background-size: cover;
+  display: flex;
+  border: 2px inset black;
+  padding: 2em;
+  max-height: 300px;
+  max-width: 1000px;
+  border-radius: 5em;
+  box-shadow: #F2711C 2px 5px 8px 2px;
+}
+
+.fontPrez {
+  margin: auto;
+  font-size: 25px;
+  text-align: center;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #F2711C
+}
+
+.imgPrezPerso1 {
+  border: 6px #F2711C inset;
+  border-radius: 30%;
+}
+
+.imgPrezPerso2 {
+  border: 6px #F2711C outset;
+  border-radius: 30%;
+}
