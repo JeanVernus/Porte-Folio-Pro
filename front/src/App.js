@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { VerticleButton as ScrollUpButton } from "react-scroll-up-button";
 import { Image } from 'semantic-ui-react';
-import Facebook from './asset/LogoFace.jpg';
-import MenuBurger from './Components/MenuBurger';
-import './CSS/App.css';
+import Facebook from './asset/PorteFolio/LogoFace.jpg';
+import MenuBurger from './Components/PorteFolio/MenuBurger';
+import './CSS/PorteFolio/App.css';
 
 class Accueil extends Component {
   render() {

@@ -26,16 +26,15 @@ App.post('/sendForm', (req, res) => {
   const job = req.body.job;
   const company = req.body.company;
   const Text = req.body.Text;
+  const Nombre = req.body.Nombre;
   const Email = req.body.Email;
 
   const addUsers = `INSERT INTO portefolioUsers ( Nom, Prenom, Email, Poste, Societe) VALUES (${mySql.escape(lastName)}, ${mySql.escape(firstName)}, ${mySql.escape(Email)}, ${mySql.escape(job)}, ${mySql.escape(company)})`
   config.query(addUsers, (err, resultAddUsers) => {
     if (err) {
-      res.status(200).json('error')
       console.log(err);
     }
     else {
-      res.status(200).json('register ok')
       console.log('resultAddUsers', resultAddUsers);
     }
   })
@@ -44,13 +43,13 @@ App.post('/sendForm', (req, res) => {
   const { google } = require("googleapis");
   const OAuth2 = google.auth.OAuth2;
   const oauth2Client = new OAuth2(
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "https://developers.google.com/oauthplayground"
   );
 
   oauth2Client.setCredentials({
-    refresh_token: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    refresh_token: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
   });
   const accessToken = oauth2Client.getAccessToken()
 
@@ -60,24 +59,30 @@ App.post('/sendForm', (req, res) => {
     secure: true,
     auth: {
       type: "OAuth2",
-      user: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-      clientId: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-      clientSecret: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-      refreshToken: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      user: "jeannywcs@gmail.com",
+      clientId: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      clientSecret: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      refreshToken: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
       accessToken: accessToken
     }
   });
   let mailOptions = {
     from: `${Email}`,
-    to: '"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+    to: '"JeanVernus"<jeannywcs@gmail.com>',
     subject: "Portefolio",
     text: "",
-    html: `${firstName}"..."${lastName}<br />${job}"..."${company}<br />${Text}`,
+    html: `${firstName}"..."${lastName}<br />${job}"..."${company}<br />${Text}<br />${Nombre}`,
   };
-  transporter.sendMail(mailOptions, (error, response) => {
-    error ? console.log(error) : console.log(response);
-    smtpTransport.close();
-  });
+  transporter.sendMail(mailOptions, (err, info) => {
+    if (err) {
+      console.log(err.message);
+      return process.exit(1)
+    }
+    else {
+      console.log(info);
+      return res.status(200).json({string:'badMail'})
+    }
+  })
 })
 
 App.get('/*', function (req, res) {

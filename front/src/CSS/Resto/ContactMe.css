@@ -1,0 +1,29 @@
+.segment {
+  text-align: center;
+}
+.paddingFormResto{
+  padding: 2em;
+  text-align: center;
+  border: 4px ridge #990e0e
+
+}
+
+.BannHoraire{
+  border: 2px solid #990e0e;
+  background-color: black;
+  border: 2px solid 990e0e;
+  padding: 1.5em;
+  width: 100%;
+  color:white;
+  text-align: center
+}
+
+.displayDividerContact{
+  font-family: 'Parisienne', Arial, sans-serif;
+  font-size: 40px;
+  color: white
+}
+
+Input{
+  text-align: center
+}

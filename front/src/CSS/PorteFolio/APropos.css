@@ -1,0 +1,17 @@
+.imgAccueil {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px double rgb(99, 19, 85);
+  border-radius: 50%;
+}
+
+.divBottom {
+  margin-bottom: 10em;
+}
+
+.DisplayText{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}

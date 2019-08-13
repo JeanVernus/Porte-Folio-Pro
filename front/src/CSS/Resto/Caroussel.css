@@ -1,0 +1,13 @@
+@import "./image-gallery.css";
+
+.displayMarginResto {
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+.displayTitleResto {
+  text-align: center;
+  font-family: 'Parisienne', Arial, sans-serif;
+  font-size: 40px
+}

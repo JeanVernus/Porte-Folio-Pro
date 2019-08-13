@@ -1,0 +1,14 @@
+@import "../../../node_modules/react-image-gallery/styles/css/image-gallery.css";
+
+.displayCaroussel {
+  padding: 2em
+}
+
+.displayMargin {
+display: flex;
+justify-content: center;
+border: solid 4px rgb(99, 19, 85);
+border-radius: 5em;
+background-color: #231F20;
+padding: 2em;
+}

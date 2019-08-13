@@ -1,0 +1,17 @@
+.paddingFormFairePart {
+  padding: 2em;
+  font-family: 'Parisienne', cursive;
+  border: 6px solid #0a2725;
+  border-radius: 10%;
+  color: #0a2725;
+  margin-bottom: 3em
+}
+
+.displayLink2 {
+  text-align: center;
+  color: #0a2725;
+}
+
+.h1{
+  font-family: 'Parisienne', cursive;
+}
