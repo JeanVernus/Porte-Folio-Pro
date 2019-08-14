@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { VerticleButton as ScrollUpButton } from "react-scroll-up-button";
 import { Image, Divider, Header } from 'semantic-ui-react';
+import Facebook from '../../asset/PorteFolio/LogoFace.jpg';
 import Carte from '../../asset/PorteFolio/banniere.png';
-import JV from "../../asset/PorteFolio/logoJV.png"
-import { Zoom, Fade, Bounce } from 'react-reveal';
 import Perso from '../../asset/PorteFolio/perso.jpeg';
+import JV from "../../asset/PorteFolio/logoJV.png";
+import { Zoom, Fade, Bounce } from 'react-reveal';
 import '../../CSS/PorteFolio/APropos.css'
 
 class AboutMe extends Component {
@@ -60,6 +62,21 @@ class AboutMe extends Component {
             internet en React. Le travail à l'étranger me plairais aussi mais mes filles doivent grandir encore un peu.
           </p>
         </div></Bounce>
+        <footer className="fixedFooter">
+          <h1 className="footer"><a href="https://www.facebook.com/jean.vernus.79" target="_blank"><Image className="logoFooter"src={Facebook}alt="" heigth="30px" width="30px" /></a>Mail: jeannywcs@gmail.com<a href="https://www.facebook.com/jean.vernus.79" target="_blank"><Image className="logoFooter"src={Facebook}alt="" heigth="30px" width="30px" /></a></h1>
+        </footer>
+        <div>
+          <ScrollUpButton
+            StopPosition={0}
+            ShowAtPosition={500}
+            EasingType='easeOutCubic'
+            AnimationDuration={500}
+            ContainerClassName='ScrollUpButton__Container'
+            TransitionClassName='ScrollUpButton__Toggled'
+            style={{}}
+            ToggledStyle={{}}>
+          </ScrollUpButton>
+        </div>
       </div>
     )
   }

@@ -5,10 +5,14 @@
 }
 
 .displayMargin {
-display: flex;
-justify-content: center;
-border: solid 4px rgb(99, 19, 85);
-border-radius: 5em;
-background-color: #231F20;
-padding: 2em;
+  display: flex;
+  justify-content: center;
+  border: solid 4px rgb(99, 19, 85);
+  border-radius: 5em;
+  background-color: #231F20;
+  padding: 2em;
+}
+
+.RadiusImg {
+  border-radius: 50%
 }

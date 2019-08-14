@@ -17,6 +17,7 @@
 }
 
 .h3 {
+  font-family: 'Allerta Stencil', sans-serif;
   color: #231F20;
   text-align: center;
   -webkit-text-stroke: 1px;
@@ -28,3 +29,24 @@
 .displayRestoApp {
   z-index: -5
 }
+
+.DisplayMobileDevice {
+  display: flex;
+  justify-content: center;
+}
+
+.DisplayMobileDeviceP {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: initial;
+}
+
+.borderImageVitrine {
+  border: 2px ridge rgb(99, 19, 85)
+}
+
+.textAlign {
+  font-family: 'Allerta Stencil', sans-serif;
+  text-align: center
+}
+

@@ -48,7 +48,6 @@ class NavBar extends Component {
         background: 'black',
         width: '100%',
         color: 'white',
-        padding: 5,
       },
       logo: {
         margin: '0 auto',
@@ -64,10 +63,6 @@ class NavBar extends Component {
         height: '100vh',
         transition: 'filter 0.5s ease',
       },
-      footer: {
-        marginBottom: 60,
-        marginTop: 50
-      }
     }
     const menu = [
       <a style={styles.h1} href="#QSN">Qui somme nous?</a>,
@@ -112,7 +107,7 @@ class NavBar extends Component {
             <ContactUs />
           </section>
           <section>
-            <footer style={styles.footer}>
+            <footer>
               <h1 className="footerResto">
                 <a href="https://www.facebook.com/" target="_blank"><Image className="logoFooterResto" src={Facebook} alt="" heigth="30px" width="30px" /></a>
                 <h1 className="InvertH1bResto">Appelez nous au 07.77.66.07.77</h1>

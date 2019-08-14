@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { VerticleButton as ScrollUpButton } from "react-scroll-up-button";
+import Facebook from '../../asset/PorteFolio/LogoFace.jpg';
 import { Form, Button, Image } from 'semantic-ui-react';
-import { Zoom, Fade, Bounce } from 'react-reveal';
 import Carte from '../../asset/PorteFolio/banniere.png';
-import Swal from 'sweetalert2';
+import { Zoom, Fade, Bounce } from 'react-reveal';
 import '../../CSS/PorteFolio/Contact.css';
+import Swal from 'sweetalert2';
 import Axios from 'axios';
 
 class ContactMe extends Component {
@@ -87,6 +89,21 @@ class ContactMe extends Component {
             <h1 className="InvertH1b">Une question? Appelez moi au 06.35.15.12.20</h1>
           </div><br /><br /><br /><br />
         </div></Bounce>
+        <footer className="fixedFooter">
+          <h1 className="footer"><a href="https://www.facebook.com/jean.vernus.79" target="_blank"><Image className="logoFooter"src={Facebook}alt="" heigth="30px" width="30px" /></a>Mail: jeannywcs@gmail.com<a href="https://www.facebook.com/jean.vernus.79" target="_blank"><Image className="logoFooter"src={Facebook}alt="" heigth="30px" width="30px" /></a></h1>
+        </footer>
+        <div>
+          <ScrollUpButton
+            StopPosition={0}
+            ShowAtPosition={350}
+            EasingType='easeOutCubic'
+            AnimationDuration={500}
+            ContainerClassName='ScrollUpButton__Container'
+            TransitionClassName='ScrollUpButton__Toggled'
+            style={{}}
+            ToggledStyle={{}}>
+          </ScrollUpButton>
+        </div>
       </div>
     );
   }

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import ImageGallery from 'react-image-gallery';
 import { Image } from 'semantic-ui-react';
-import Resto1 from '../../asset/PorteFolio/Caroussel1.png';
-import Resto2 from '../../asset/PorteFolio/Caroussel2.png';
-import Resto3 from '../../asset/PorteFolio/Caroussel3.png';
+import Resto1 from '../../asset/MaVitrine/ÔBonDîner1.png';
+import Resto2 from '../../asset/MaVitrine/ÔBonDîner2.png';
+import Resto3 from '../../asset/MaVitrine/ÔBonDîner3.png';
 import '../../CSS/PorteFolio/Caroussel.css';
 
 class Caroussel extends Component {

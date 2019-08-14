@@ -1,28 +1,19 @@
 import React, { Component } from 'react';
 import ScrollUpButton from "react-scroll-up-button";
-import NavBar from './Menu/Navbar';
 import '../../CSS/Resto/RestoApp.css';
+import NavBar from './Menu/Navbar';
 
 class App extends Component {
   render() {
-
-    const styles = {
-      box: {
-        height: '635vh',
-        borderStyle: 'solid',
-        borderColor: 'darkmagenta',
-        borderWeight: '6px'
-      },
-    }
     return (
-      <div style={styles.box}>
+      <div>
         <div>
           <NavBar />
         </div>
         <div>
           <ScrollUpButton
-            StopPosition={4320}
-            ShowAtPosition={5500}
+            StopPosition={0}
+            ShowAtPosition={500}
             EasingType='easeOutCubic'
             AnimationDuration={1000}
             ContainerClassName='ScrollUpButton__ContainerResto'

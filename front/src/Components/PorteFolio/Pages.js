@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import { Image, Divider, Header } from 'semantic-ui-react';
-import JV from '../../asset/PorteFolio/logoJV.png';
-import Carte from '../../asset/PorteFolio/banniere.png'
-import Github from '../../asset/PorteFolio/Github.png';
+import { VerticleButton as ScrollUpButton } from "react-scroll-up-button";
 import { Zoom, Fade, Flip, Bounce, Rotate } from 'react-reveal';
 import Franceioi from '../../asset/PorteFolio/Franceioi.png';
 import SoloLearn from '../../asset/PorteFolio/SoloLearn.png';
+import Facebook from '../../asset/PorteFolio/LogoFace.jpg';
 import Linkedin from '../../asset/PorteFolio/Linkedin.png';
+import { Image, Divider, Header } from 'semantic-ui-react';
+import Carte from '../../asset/PorteFolio/banniere.png';
+import Github from '../../asset/PorteFolio/Github.png';
+import JV from '../../asset/PorteFolio/logoJV.png';
 import '../../CSS/PorteFolio/Pages.css';
 
 class Pages extends Component {
@@ -48,6 +50,21 @@ class Pages extends Component {
             <Flip><Image className="imgDivider" src={JV} alt="" /></Flip>
           </Header>
         </Divider><br /><br /><br /><br />
+        <footer className="fixedFooter">
+          <h1 className="footer"><a href="https://www.facebook.com/jean.vernus.79" target="_blank"><Image className="logoFooter"src={Facebook}alt="" heigth="30px" width="30px" /></a>Mail: jeannywcs@gmail.com<a href="https://www.facebook.com/jean.vernus.79" target="_blank"><Image className="logoFooter"src={Facebook}alt="" heigth="30px" width="30px" /></a></h1>
+        </footer>
+        <div>
+          <ScrollUpButton
+            StopPosition={0}
+            ShowAtPosition={350}
+            EasingType='easeOutCubic'
+            AnimationDuration={500}
+            ContainerClassName='ScrollUpButton__Container'
+            TransitionClassName='ScrollUpButton__Toggled'
+            style={{}}
+            ToggledStyle={{}}>
+          </ScrollUpButton>
+        </div>
       </div>
     );
   }

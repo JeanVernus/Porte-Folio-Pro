@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import ImageGallery from 'react-image-gallery';
 import { Image } from 'semantic-ui-react';
-import Taxi1 from '../../asset/PorteFolio/Caroussel1.png';
-import Taxi2 from '../../asset/PorteFolio/Caroussel2.png';
-import Taxi3 from '../../asset/PorteFolio/Caroussel3.png';
+import Taxi1 from '../../asset/MaVitrine/Taxi1.png';
+import Taxi2 from '../../asset/MaVitrine/Taxi2.png';
+import Taxi3 from '../../asset/MaVitrine/taxi3.png';
 import '../../CSS/PorteFolio/Caroussel.css';
 
 class Caroussel extends Component {
@@ -32,7 +32,7 @@ class Caroussel extends Component {
       
     ]
     return (
-      <div className="displayMargin"><Image ><ImageGallery autoPlay="true" items={images} /></Image></div>
+      <div className="displayMargin"><Image ><ImageGallery  autoPlay="true" items={images} /></Image></div>
     );
   }
 

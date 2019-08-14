@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import { VerticleButton as ScrollUpButton } from "react-scroll-up-button";
 import { Image, Card, Icon, Divider, Header } from 'semantic-ui-react';
-import Carte from '../../asset/PorteFolio/banniere.png'
-import JV from '../../asset/PorteFolio/logoJV.png';
+import Facebook from '../../asset/PorteFolio/LogoFace.jpg';
 import { Zoom, Fade, Bounce, Flip } from 'react-reveal';
+import Carte from '../../asset/PorteFolio/banniere.png';
+import JV from '../../asset/PorteFolio/logoJV.png';
+import '../../CSS/PorteFolio/Accueil.css';
 import { Link } from 'react-router-dom';
 import Carroussel from './Caroussel'
-import '../../CSS/PorteFolio/Accueil.css'
 
 class Accueil extends Component {
   render() {
@@ -108,6 +110,21 @@ class Accueil extends Component {
             <Flip><Image className="imgDivider" src={JV} alt="" /></Flip>
           </Header>
         </Divider> <br /> <br /> <br /> <br /> <br /> <br />
+        <footer className="fixedFooter">
+          <h1 className="footer"><a href="https://www.facebook.com/jean.vernus.79" target="_blank"><Image className="logoFooter"src={Facebook}alt="" heigth="30px" width="30px" /></a>Mail: jeannywcs@gmail.com<a href="https://www.facebook.com/jean.vernus.79" target="_blank"><Image className="logoFooter"src={Facebook}alt="" heigth="30px" width="30px" /></a></h1>
+        </footer>
+        <div>
+          <ScrollUpButton
+            StopPosition={0}
+            ShowAtPosition={500}
+            EasingType='easeOutCubic'
+            AnimationDuration={500}
+            ContainerClassName='ScrollUpButton__Container'
+            TransitionClassName='ScrollUpButton__Toggled'
+            style={{}}
+            ToggledStyle={{}}>
+          </ScrollUpButton>
+        </div>
       </div >
     );
   }

@@ -43,13 +43,13 @@ App.post('/sendForm', (req, res) => {
   const { google } = require("googleapis");
   const OAuth2 = google.auth.OAuth2;
   const oauth2Client = new OAuth2(
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "1016223330283-in0m7i96g39ffag9u8pp4kg91qf0qm11.apps.googleusercontent.com",
+    "6f5a1v2ya4n4WU-SocxofbGM",
     "https://developers.google.com/oauthplayground"
   );
 
   oauth2Client.setCredentials({
-    refresh_token: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    refresh_token: "1/xhvN7IspL0rvnLxVrr9MV9u3HbOkfXG_n-xLGm9c_NX4y-w_AV8rksR3--Pzc02R"
   });
   const accessToken = oauth2Client.getAccessToken()
 
@@ -60,9 +60,9 @@ App.post('/sendForm', (req, res) => {
     auth: {
       type: "OAuth2",
       user: "jeannywcs@gmail.com",
-      clientId: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-      clientSecret: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-      refreshToken: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      clientId: "1016223330283-in0m7i96g39ffag9u8pp4kg91qf0qm11.apps.googleusercontent.com",
+      clientSecret: "6f5a1v2ya4n4WU-SocxofbGM",
+      refreshToken: "1/xhvN7IspL0rvnLxVrr9MV9u3HbOkfXG_n-xLGm9c_NX4y-w_AV8rksR3--Pzc02R",
       accessToken: accessToken
     }
   });

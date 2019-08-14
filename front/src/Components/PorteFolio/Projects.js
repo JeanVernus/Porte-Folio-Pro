@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { VerticleButton as ScrollUpButton } from "react-scroll-up-button";
 import { Image, Divider, Header } from 'semantic-ui-react';
+import Facebook from '../../asset/PorteFolio/LogoFace.jpg';
 import ReVisiteTaCarte from '../Projects/Re-visiteTaCarte';
-import FichTechQuiz from '../Projects/fichTechs';
 import Carte from '../../asset/PorteFolio/banniere.png';
 import JV from '../../asset/PorteFolio/logoJV.png';
+import FichTechQuiz from '../Projects/fichTechs';
 import { Zoom, Fade, Flip } from 'react-reveal';
 import WildQuiz from '../Projects/WildQuiz';
 import '../../CSS/PorteFolio/Projet.css';
@@ -84,6 +86,21 @@ class Projects extends Component {
         <div>
           <FichTechQuiz />
         </div><br /><br /><br /><br />
+        <footer className="fixedFooter">
+          <h1 className="footer"><a href="https://www.facebook.com/jean.vernus.79" target="_blank"><Image className="logoFooter"src={Facebook}alt="" heigth="30px" width="30px" /></a>Mail: jeannywcs@gmail.com<a href="https://www.facebook.com/jean.vernus.79" target="_blank"><Image className="logoFooter"src={Facebook}alt="" heigth="30px" width="30px" /></a></h1>
+        </footer>
+        <div>
+          <ScrollUpButton
+            StopPosition={0}
+            ShowAtPosition={500}
+            EasingType='easeOutCubic'
+            AnimationDuration={500}
+            ContainerClassName='ScrollUpButton__Container'
+            TransitionClassName='ScrollUpButton__Toggled'
+            style={{}}
+            ToggledStyle={{}}>
+          </ScrollUpButton>
+        </div>
       </div>
     );
   }
